@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .wrapper {
+        max-width: 750px;
+        margin: 0 auto;
+      }
+      .plant {
+        opacity: 0;
+        animation: grow-plant 1s ease-in;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        transform-origin: bottom;
+      }
+      .soil {
+        animation: fade-in-soil .5s linear;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+        opacity: 0;
+      }
+      .arm {
+        transform-origin: left;
+        animation: rotate-arm 4s linear;
+        animation-timing-function: cubic-bezier(0.8, -0.01, 0.01, 0.96);
+        /*animation-delay: 2s;*/
+        /*transform: rotate(-20deg);*/
+        animation-fill-mode: forwards;
+      }
+      .fingers {
+        transform-origin: 622px 453px;
+        animation: rotate-fingers 1s linear;
+        animation-delay: 1.25s;
+        animation-fill-mode: forwards;
+        transform: rotate(-121deg);
+      }
+
+      @keyframes grow-plant {
+        0% {
+          transform: scale(0.1, 0.1);
+          opacity: 0;
+        }
+        75% {
+          opacity: 1;
+          transform: scale(1.1, 1.1);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1, 1);
+        }
+      }
+
+      @keyframes fade-in-soil {
+        from{
+          opacity: 0;
+        }
+        to{
+          opacity: 1;
+        }
+      }
+
+      @keyframes rotate-arm {
+        0% {
+          /*opacity: 0;*/
+          transform: rotate(-20deg);
+        }
+        100% {
+          /*opacity: 1;*/
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes rotate-fingers {
+        from{
+          transform: rotate(-121deg);
+        }
+        to{
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg viewBox="0 0 886 886" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41">
+        <g class="plant" fill="#20C24F" fill-rule="nonzero">
+          <path d="M704.13 342.38c-27.42 0-34.62-22.62-34.62-22.62s7.2-28.45 34.63-28.45c18.85 0 49.7 25.72 49.7 25.72s-30.85 25.36-49.7 25.36zM599.6 233.73c21.6 21.94 8.9 46.62 8.9 46.62s-26.4 15.08-47.98-6.86c-14.74-15.1-19.2-59.3-19.2-59.3s43.53 4.45 58.27 19.53z"/>
+          <path d="M753.83 317.02c-17.14-3.43-34.62-5.48-51.75-3.43-16.8 1.7-33.94 7.88-45.25 19.53-5.82 5.83-9.94 12.68-12 20.22-.34 1.72-.68 3.77-1.02 5.5-.34 2.04 0 3.4 0 5.8l.7 13.04 2.4 52.43h-17.15l2.75-52.44.68-13.04c0-2.05.34-4.8.7-7.2.33-2.4 1.02-4.8 1.7-7.2 3.1-9.25 8.9-17.13 16.1-22.96 7.2-6.17 15.43-10.28 24-13.36 8.57-2.75 17.48-4.12 26.4-4.46 17.48-.7 34.96 2.74 51.75 7.54"/>
+          <path d="M541.32 214.2c17.83 10.96 34.28 24.67 48.67 40.1 14.4 15.42 27.42 32.2 38.04 50.72 5.14 9.26 10.28 18.86 13.37 29.82.7 2.75 1.38 5.5 1.72 8.57l.34 8.24.7 15.77 2.73 62.73h-17.15l2.75-63.07.68-15.76.34-3.77v-3.78c0-2.05-.34-4.45-1.02-6.85-2.06-9.6-6.17-19.2-10.97-28.45-9.26-18.5-21.25-35.65-34.62-51.76-13-16.1-28.1-30.5-45.58-42.5"/>
+        </g>
+        <g class="arm">
+          <g class="soil">
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.9966 0 0 .9966 -70.203 -2205.53)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.7817 0 0 .7817 91.554 -1633.445)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.7817 0 0 .7817 91.554 -1648.682)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.7817 0 0 .7817 112.96 -1645.94)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.7817 0 0 .7817 108.91 -1637.356)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.56983 0 0 .56983 268.45 -1076.318)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.56983 0 0 .56983 264.18 -1069.9)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.56983 0 0 .56983 249.347 -1067.063)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.56983 0 0 .56983 247.04 -1094.438)"/>
+            <circle cx="684.5" cy="2643.5" r="14.5" fill="#C27E20" transform="matrix(.40866 0 0 .40866 389.843 -645.39)"/>
+          </g>
+          <path d="M247.03 400.52l7.47-45 249.7 48.64-5.14 30.97-252.03-34.6z" fill="#6A6A6A" class="forearm"/>
+          <g class="elbow">
+            <circle cx="1551.06" cy="2321.06" r="64.06" fill="#6A6A6A" transform="matrix(.59167 0 0 .59167 -694.965 -1000.775)"/>
+            <circle cx="1551.06" cy="2321.06" r="64.06" fill="#fff" transform="matrix(.32988 0 0 .32988 -288.907 -393.143)"/>
+            <circle cx="1551.06" cy="2321.06" r="64.06" fill="#6A6A6A" transform="matrix(.17245 0 0 .17245 -44.73 -27.728)"/>
+          </g>
+          <g class="hand">
+            <path d="M534.52 444.38l12.36-33.94 79.56 34.66-8.68 23.85-83.24-24.57z" fill="#6A6A6A"/>
+            <path class="fingers" d="M617.56 468.94l-4.88-27.67 86.03-10.93 3.44 19.44-84.58 19.16z" fill="#6A6A6A"/>
+          </g>
+          <g class="wrist">
+            <circle cx="1551.06" cy="2321.06" r="64.06" fill="#6A6A6A" transform="matrix(.47 0 0 .47 -205.253 -667.044)"/>
+            <circle cx="1551.06" cy="2321.06" r="64.06" fill="#fff" transform="matrix(.26204 0 0 .26204 117.286 -184.376)"/>
+            <circle cx="1551.06" cy="2321.06" r="64.06" fill="#6A6A6A" transform="matrix(.13698 0 0 .13698 311.25 105.86)"/>
+          </g>
+        </g>
+      </svg>
+
+    </div>
+  </body>
+</html>
