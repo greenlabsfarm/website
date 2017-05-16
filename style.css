@@ -22,7 +22,7 @@ section.robot {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   /* background-image: linear-gradient(45deg, yellow, #fff); */
   /* background: #20C24F; */
   /* background: rgba(32, 194, 79, .5) */
@@ -35,7 +35,31 @@ section.robot .icon {
   position: relative;
   min-width: 350px;
   max-width: 100%;
-  /* padding: 55px; */
+  padding: 35px;
+}
+
+section.bg-image {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+section.tomatos {
+  background-image: url('./img/tomatos.jpg');
+}
+
+section.cucumbers {
+  background-image: url('./img/cucumbers.jpg');
+}
+
+section.signup {
+  height: 50vh;
+  background-image: linear-gradient(45deg, #f24645, #ebc08d);
+}
+
+.signup h2 {
+  text-align: center;
+  color: white;
 }
 
 .bubble-inner {
