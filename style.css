@@ -1,0 +1,159 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100vh;
+}
+
+header {
+  min-height: 66vh;
+  padding-bottom: 50px;
+  /* background-image: linear-gradient(45deg, lightgrey, #fff); */
+}
+
+header > .wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+section.robot {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: linear-gradient(45deg, yellow, #fff); */
+  /* background: #20C24F; */
+  /* background: rgba(32, 194, 79, .5) */
+  /* background-image: linear-gradient(45deg, #fca5f1, #b5ffff); */
+  background-image: linear-gradient(45deg, lightgreen, #b5ffff);
+  flex-wrap: wrap;
+}
+
+section.robot .icon {
+  position: relative;
+  min-width: 350px;
+  max-width: 100%;
+  /* padding: 55px; */
+}
+
+.bubble-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.bubble-inner > h2 {
+    margin: 0;
+    transform: rotate(-15deg);
+}
+
+footer {
+  min-height: 25vh;
+  background-image: linear-gradient(45deg, black, grey);
+  color: white;
+}
+
+.plant {
+  opacity: 0;
+  animation: grow-plant 1.5s ease-in;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+  transform-origin: bottom;
+}
+.soil {
+  /*animation: fade-in-soil .5s linear;*/
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  /*opacity: 0;*/
+}
+.arm {
+  transform-origin: left;
+  animation: rotate-arm 3s linear;
+  animation-fill-mode: forwards;
+}
+.hand {
+  transform-origin: 535px 421px;
+  transform: rotate(-30deg);
+  animation: rotate-hand 2s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.fingers {
+  transform-origin: 622px 453px;
+  animation: rotate-fingers 1s linear;
+  animation-delay: 1.25s;
+  animation-fill-mode: forwards;
+  transform: rotate(-121deg);
+}
+.greenlabs {
+  /*opacity: 0;
+  animation: fade-in-text 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;*/
+}
+.farm {
+  /*opacity: 0;*/
+}
+
+@keyframes fade-in-text {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes grow-plant {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes fade-in-soil {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-arm {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-hand {
+  0% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
