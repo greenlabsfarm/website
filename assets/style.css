@@ -23,7 +23,8 @@ section.robot {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(45deg, yellow, red);
+  /* background-image: linear-gradient(45deg, yellow, red); */
+  background-image: linear-gradient(45deg, lightgreen, #fff);
   flex-wrap: wrap;
 }
 
@@ -41,8 +42,8 @@ section.bg-image {
 }
 
 section.signup {
-  height: 50vh;
-  background-image: linear-gradient(45deg, lightgreen, #FFEB3B);
+  min-height: 33vh;
+  background-image: linear-gradient(45deg, lightgreen, #fff);
   display: flex;
   align-items: center;
 }
@@ -50,15 +51,12 @@ section.signup {
 section.signup h2{
   font-size: 6rem;
   color: white;
+  color: rgb(32,194,79);
+  text-align: center;
 }
 
 #mc_embed_signup {
   background: transparent !important;
-}
-
-.signup h2 {
-  text-align: center;
-  color: white;
 }
 
 .bubble-inner {
@@ -75,14 +73,25 @@ section.signup h2{
 .bubble-inner > h2 {
     margin: 0;
     transform: rotate(-15deg);
+    font-size: 3vw;
+    color: rgb(32,194,79);
 }
 
 footer {
   min-height: 25vh;
-  background-image: linear-gradient(45deg, black, grey);
+  background-image: linear-gradient(45deg, black, #6a6a6a);
+  /* background: #6a6a6a; */
   color: white;
   display: flex;
   align-items: center;
+}
+
+footer a {
+    color: rgb(32,194,79);
+}
+
+footer a:hover {
+    color: rgb(32,194,79);
 }
 
 .plant {

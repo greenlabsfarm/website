@@ -114,7 +114,8 @@
                                                         </svg>
                                                       </div>
     </header>
-    <section class="bg-image tomatos b-lazy" data-src="img/tomatos.jpg"></section>
+    <section class="bg-image cucumbers b-lazy" data-src="img/cucumbers.jpg"></section>
+
     <section class="robot">
 
       <div class="container">
@@ -132,7 +133,9 @@
       </div>
 
     </section>
-    <section class="bg-image cucumbers b-lazy" data-src="img/cucumbers.jpg"></section>
+
+    <section class="bg-image tomatos b-lazy" data-src="img/tomatos.jpg"></section>
+
     <section class="signup">
       <div class="container">
         <div class="row">
@@ -173,6 +176,7 @@
               Esteburgring 10 <br>
               21635 Jork
             </p>
+            <p><a href="mailto:info@greenlabs.farm">info@greenlabs.farm</a></p>
           </div>
         </div>
       </div>
@@ -185,7 +189,7 @@
     <script src="assets/blazy.min.js"></script>
     <script>
       $(document).ready(function() {
-        window.blazy = new Blazy();
+        window.blazy = new Blazy({offset: 200});
       }); 
     </script>
   </body>
